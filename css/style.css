@@ -7,10 +7,15 @@
 }
 ul,ol{
     list-style-type: none;
+    padding: 0;
 }
 a{
     text-decoration: none;
     display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
 }
 /* All common css end */
 
@@ -29,6 +34,9 @@ a{
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 16px;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #FF4655;
 }
 .sin{
     font-size: 16px;
@@ -91,15 +99,19 @@ a{
     margin-bottom: 50px;
 }
 .bannercontent .view{
-    color: #000000;
+    color: #fff;
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    background: #ffff;
+    background: #212121;
     padding: 15px 25px;
-
+    transition: all linear 0.1s;
 }
-
+.bannercontent .view:hover{
+    color: #000000;
+    background: #ffff;
+    
+}
 .socials a {
     width: 35px;
     height: 35px;
@@ -112,10 +124,6 @@ a{
     align-items: center;
     justify-content: center;
 }
-
-
-
-
 .bannercontent ul{
     display: flex;
     padding-left: 0!important;
@@ -123,9 +131,6 @@ a{
     column-gap: 20px;
     margin-top: 242px;
 }
-/* .socials li a i{
-    padding-top: 300px;
-} */
 #platforms{
     background: #121212;
     padding-top: 45px;
@@ -163,6 +168,7 @@ a{
     color: #ffff;
     margin-left: 31px;
     font-family: "Oswald", sans-serif;
+    padding-bottom: 10px;
 }
 .platformlist ul li {
     font-size: 18px;
@@ -189,6 +195,11 @@ a{
     background: #212121;
     padding: 15px 25px;
     margin-left: 31px;
+    transition: all linear 0.1s;
+}
+.platformlist a:hover{
+    color: #000000;
+    background: #ffff;
 }
 .numberitems h3{
     font-size: 60px;
@@ -224,11 +235,349 @@ a{
 }
 /* banner end */
 
-/* All common css start */
-/* All common css end */
+/* popular part start */
+#popularpart{
+    background: #191919;
+    padding-top: 115px;
+    padding-bottom: 90px;
+}
+.populartext h3{
+    width: 454px;
+    font-size: 38px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    color: #ffff;
+    text-align: right;
+    position: relative;
+}
+.populartext h3::after{
+    height: 3px;
+    width: 105px;
+    background: #FF4655;
+    content: "";
+    position: absolute;
+    right: 110px;
+    bottom: 3px;
+}
+.populartext{
+    padding-bottom: 80px;
+}
+.pics .picture22{
+    margin-top: -167px;
+}
+/* popular part end */
 
-/* All common css start */
-/* All common css end */
+/* matches start */
+#matchepart{
+    background: #121212;
+    padding: 90px;
+}
+.matchetext h3{
+    width: 446px;
+    font-size: 38px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+}
+.matchetext h3::after{
+    height: 3px;
+    width: 105px;
+    background: #FF4655;
+    content: "";
+    position: absolute;
+    left: 150px;
+    bottom: 3px;
+}
+.lives{
+    position: relative;
+}
+.lives img{
+    height: 100%;
+    filter: grayscale(100%);
+    height: 276px;
+    margin-top: 70px;
+    display: block;
+}
+/* .lives img:hover{
+    height: 100%;
+    height: 290px;
+    filter: grayscale(0%);
+    margin-top: 70px;
+    content: "";
+    transition: all linear 0.4s;
+} */
+.playbtn i{
+    color: #ffffff;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 22px;
+    width: 20px;
+}
+.livestext{
+    color: #ffffff;
+    font-size: 22px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    position: absolute;
+    bottom: 53px;
+    left: 25px;
+}
+.livesname{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    position: absolute;
+    bottom: 23px;
+    left: 25px;
+}
+/* matches end */
+
+/* tops part start */
+#topspart{
+    background: #191919;
+    padding: 90px;
+}
+.topstext h3{
+    width: 454px;
+    font-size: 38px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    color: #ffff;
+    text-align: right;
+    position: relative;
+}
+.topstext h3::after{
+    height: 3px;
+    width: 105px;
+    background: #FF4655;
+    content: "";
+    position: absolute;
+    right: 80px;
+    bottom: 3px;
+}
+.sales h3{
+    color: #fff;
+    font-size: 22px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    padding-top: 18px;
+}
+.sales{
+    margin-top: 47px;
+}
+.sales h4{
+    color: #666666;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    padding: 20px 0;
+}
+.price{
+    display: flex;
+    gap: 10px;
+}
+.price li{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+.price .tag{
+    color: #fff;
+    background: #FF4655;
+    padding: 4px;
+    font-size: 14px;
+}
+.price .oldprice{
+    color: #666666;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+.price .newprice{
+    color: #fff;
+    font-size: 16px;
+}
+.catalog h3{
+     color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.bgforgamelog{
+    background: #212121;
+    display: flex;
+}
+.logtextpart{
+    margin-left: 45px;
+    margin-top: 45px;
+}
+.logtextpart h4{
+    color: #FF4655;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.logtextpart h3{
+    color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    width: 580px;
+    padding-bottom: 16px;
+}
+.logtextpart p{
+    color: #666666;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 603px;
+    padding-bottom: 25px;
+}
+.logtextpart a{
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px 31px;
+    background: #121212;
+}
+.gameslogs2{
+    display: flex;
+    position: relative;
+}
+.one{
+    margin: 0;
+    position: absolute;
+}
+.two{
+    margin-left: 37px;
+    position: absolute;
+}
+.three{
+    margin-left: 90px;
+    position: absolute;
+    
+}
+.four{
+   margin-right: 90px;
+    position: absolute;
+    z-index: 99999;
+}
+.five{
+    right: 0;
+    position: absolute;
+}
+/* tops part end */
+
+/* accesories start */
+#accesoriespart{
+    background: #121212;
+    padding: 90px;
+}
+.accesoriestext h3{
+    width: 446px;
+    font-size: 38px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+}
+.accesoriestext h3::after{
+    height: 3px;
+    width: 105px;
+    background: #FF4655;
+    content: "";
+    position: absolute;
+    left: 200px;
+    bottom: 3px;
+}
+.itemBox{
+    padding: 25px 40px;
+    background: #212121;
+    text-align: center;
+    margin-top: 120px;
+}
+.itemBox img {
+    height: 250px;
+    object-fit: cover;
+}
+.itemBox h3{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.itemBox h4{
+    color: #fff;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    margin-top: 80px;
+}
+.itemBox h5{
+    color: #FF4655;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+/* accesories end */
+
+/* teams part start */
+#teamspart{
+    background: #191919;
+    padding: 100px;
+}
+.teamstext h3{
+    width: 454px;
+    font-size: 38px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    color: #ffff;
+    text-align: right;
+    position: relative;
+}
+.teamstext h3::after{
+    height: 3px;
+    width: 105px;
+    background: #FF4655;
+    content: "";
+    position: absolute;
+    right: 110px;
+    bottom: 3px;
+}
+/* teams part end */
+
+/* faq start */
+#faqpart{
+    background: #121212;
+    padding: 90px;
+}
+.faqtext h3{
+    width: 446px;
+    font-size: 38px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+}
+.faqtext h3::after{
+    height: 3px;
+    width: 105px;
+    background: #FF4655;
+    content: "";
+    position: absolute;
+    left: 150px;
+    bottom: 3px;
+}
+/* faq end */
 
 /* All common css start */
 /* All common css end */
